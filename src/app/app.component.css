@@ -1,8 +1,33 @@
 /* AppComponent's private CSS styles */
+
+.title {
+  width: 30%;
+}
+nav {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.searchBox {
+  width: 45%;
+}
+
+
+
 h1 {
   margin-bottom: 0;
+  padding-left: 5%;
 }
+h2 {
+  /* margin-bottom: 0; */
+  padding-left: 5%;
+}
+
+
+
 nav a {
+  min-width: 60px;                            /* +/- largeur min de bouton de navigation (facultatif) */
+  margin-left: 10px;
   padding: 1rem;
   text-decoration: none;
   margin-top: 10px;
