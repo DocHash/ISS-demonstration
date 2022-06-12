@@ -12,7 +12,6 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MetaTestComponent } from './meta-test/meta-test.component';
 import { ArticleSearchComponent } from './article-search/article-search.component';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { ArticleSearchComponent } from './article-search/article-search.componen
     ArticleDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    MetaTestComponent,
     ArticleSearchComponent
   ],
   imports: [
