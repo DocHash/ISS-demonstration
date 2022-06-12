@@ -1,13 +1,21 @@
-/* HeroSearch private styles */
+/* ArticleSearch private styles */
+
+.search-component {
+  width: 42.5%;
+  position: absolute;
+  right: 1.25%;
+  top: 2.5%;
+}
 
 label {
+    color: #d9d9d9;                           /* couleur de texte de styles.css > header */
     display: block;
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: .5rem;
-  
   }
+
   input {
     padding: .5rem;
     width: 100%;
@@ -23,6 +31,7 @@ label {
   li {
     list-style-type: none;
   }
+
   .search-result li a {
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
@@ -34,6 +43,7 @@ label {
     box-sizing: border-box;
     text-decoration: none;
     color: black;
+    background-color: white;                  /* couleur du menu déroulant = blanc */
   }
   
   .search-result li a:hover {

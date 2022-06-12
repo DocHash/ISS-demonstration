@@ -1,10 +1,20 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
+<header>
+
+  <div class="title">
+    <h1>{{title}}</h1>
+    <h2>ISS Demo</h2>
+  </div>
+
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/abstracts">Abstracts</a>
+  </nav>
+
+  <div class="searchBox"></div>
+
+</header>
+
+
 <router-outlet></router-outlet>
 
-<!-- <app-heroes></app-heroes> -->
 <app-messages></app-messages>
-<!-- <app-meta-test></app-meta-test> -->

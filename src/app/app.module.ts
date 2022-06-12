@@ -7,23 +7,23 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MetaTestComponent } from './meta-test/meta-test.component';
-import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { ArticleSearchComponent } from './article-search/article-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
+    ArticlesComponent,
+    ArticleDetailComponent,
     MessagesComponent,
     DashboardComponent,
     MetaTestComponent,
-    HeroSearchComponent
+    ArticleSearchComponent
   ],
   imports: [
     BrowserModule,
