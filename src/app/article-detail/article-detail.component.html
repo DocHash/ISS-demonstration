@@ -1,40 +1,84 @@
-<div class="article-modifier" *ngIf="article">
-    <!-- <h2>{{article.title | uppercase}} Details</h2> -->
-    <h3>Details</h3>
-    <div><span>id: </span>{{article.id}}</div>
-    <div>
-      <label for="article-title">Title: </label>
-      <input id="article-title" [(ngModel)]="article.title" placeholder="Article title" />
+<div class="article-menu" *ngIf="article">
+  <!-- <h2>{{article.title | uppercase}} Details</h2> -->
+  <div class="menu-details">
+    <div class="menu-header">
+      <h3 id="menu-detail-title">Details</h3>
+      <div id="menu-id-badge"><span>ID: </span>{{article.id}}</div>
     </div>
-    <div>
-      <label for="article-author">Authors: </label>
-      <input id="article-author" [(ngModel)]="article.authors" placeholder="Article authors" />
-    </div>
-    <div>
-      <label for="article-abstract">Abstract: </label>
-      <input id="article-abstract" [(ngModel)]="article.abstract" placeholder="Article abstract" />
-    </div>
-    <button type="button" (click)="goBack()">go back</button>
-    <button type="button" (click)="save()">save</button>
-</div>
-
-<div *ngIf="article">
-  <h2>{{article.title | uppercase}}</h2>
-  <!-- <div><span>id: </span>{{article.id}}</div> -->
+    <div class="menu-article-title"><span>Title: </span>{{article.title}}</div>
+  </div>
   <!-- <div>
     <label for="article-title">Title: </label>
     <input id="article-title" [(ngModel)]="article.title" placeholder="Article title" />
   </div> -->
-  <h3 id="article-display-author">{{article.authors}}</h3>
   <!-- <div>
     <label for="article-author">Authors: </label>
     <input id="article-author" [(ngModel)]="article.authors" placeholder="Article authors" />
   </div> -->
-  <p id="article-display-abstract">{{article.abstract}}</p>
   <!-- <div>
     <label for="article-abstract">Abstract: </label>
     <input id="article-abstract" [(ngModel)]="article.abstract" placeholder="Article abstract" />
   </div> -->
-  <!-- <button type="button" (click)="goBack()">go back</button>
-  <button type="button" (click)="save()">save</button> -->
+  <div class="buttons">
+    <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button>
+  </div>
+</div>
+
+<div class="article-details">
+
+  <div class="article-display" *ngIf="article">
+    <h2 id="article-content">{{article.title | uppercase}}</h2>
+    <!-- <div><span>id: </span>{{article.id}}</div> -->
+    <!-- <div>
+      <label for="article-title">Title: </label>
+      <input id="article-title" [(ngModel)]="article.title" placeholder="Article title" />
+    </div> -->
+    <h3 id="article-content">{{article.authors}}</h3>
+    <!-- <div>
+      <label for="article-author">Authors: </label>
+      <input id="article-author" [(ngModel)]="article.authors" placeholder="Article authors" />
+    </div> -->
+    <p id="article-content">{{article.abstract}}</p>
+    <!-- <div>
+      <label for="article-abstract">Abstract: </label>
+      <input id="article-abstract" [(ngModel)]="article.abstract" placeholder="Article abstract" />
+    </div> -->
+    <!-- <button type="button" (click)="goBack()">go back</button>
+    <button type="button" (click)="save()">save</button> -->
+  </div>
+
+  <div class="article-modifier" *ngIf="article">
+      <!-- <h2>{{article.title | uppercase}} Details</h2> -->
+      <!-- <h3>Details</h3> -->
+      <!-- <div><span>id: </span>{{article.id}}</div> -->
+    <table>
+      <tbody>
+        <tr>
+          <!-- <div> -->
+            <td id="labels"><label for="article-title">Title: </label></td>
+            <td id="inputs"><input id="article-title" [(ngModel)]="article.title" placeholder="Article title" /></td>
+          <!-- </div> -->
+        </tr>
+        <tr>
+          <!-- <div> -->
+            <td id="labels"><label for="article-author">Authors: </label></td>
+            <td id="inputs"><input id="article-author" [(ngModel)]="article.authors" placeholder="Article authors" /></td>
+          <!-- </div> -->
+        </tr>
+        <tr>
+          <!-- <div> -->
+            <td id="labels"><label for="article-abstract">Abstract: </label></td>
+            <!-- <td id="inputs"><input id="article-abstract" [(ngModel)]="article.abstract" placeholder="Article abstract" /></td> -->
+            <td id="inputs"><textarea id="article-abstract" [(ngModel)]="article.abstract" placeholder="Article abstract"></textarea></td>
+          <!-- </div> -->
+        </tr>
+      </tbody>
+    </table>
+      <!-- <button type="button" (click)="goBack()">go back</button> -->
+      <!-- <button type="button" (click)="save()">save</button> -->
+  </div>
+
+
+  
 </div>

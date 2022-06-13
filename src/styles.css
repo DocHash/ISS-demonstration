@@ -12,6 +12,17 @@ header {
     background-color: #145369;
 }
 
+footer {
+    margin: 0 0 0 0;
+    color: #d9d9d9;
+    background-color: #145369;
+    border-top: #42545C 1px solid;
+}
+
+/* section {
+    border: purple 2px solid;
+} */
+
 /* DEBUG */
   /* position: fixed; */
   /* border: purple 2px solid; */
